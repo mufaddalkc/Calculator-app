@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="styels.css" />
   </head>
   <body>
-    <div class="container">
+    <form class="container" onsubmit="calclate(event)">
       <div class="screen">
-        <input type="text" id="screen" />
+        <input type="text" id="screen" onkeydown="onKeyDown(event)" />
       </div>
       <div class="btns">
-        <button onclick="appendNum('7')">7</button>
-        <button onclick="appendNum('8')">8</button>
-        <button onclick="appendNum('9')">9</button>
-        <button class="blue" onclick="deleteItem()">DEL</button>
-        <button onclick="appendNum('4')">4</button>
-        <button onclick="appendNum('5')">5</button>
-        <button onclick="appendNum('6')">6</button>
-        <button class="operator" onclick="appendOp('+')">+</button>
-        <button onclick="appendNum('1')">1</button>
-        <button onclick="appendNum('2')">2</button>
-        <button onclick="appendNum('3')">3</button>
-        <button class="operator" onclick="appendOp('-')">-</button>
-        <button onclick="appendNum('.')">.</button>
-        <button onclick="appendNum('0')">0</button>
-        <button class="operator" onclick="appendOp('/')">/</button>
-        <button class="operator" onclick="appendOp('*')">*</button>
-        <button class="blue" onclick="resetScreen()">Reset</button>
-        <button class="operator" onclick="calclate()">=</button>
+        <button type="button" onclick="appendNum('7')">7</button>
+        <button type="button" onclick="appendNum('8')">8</button>
+        <button type="button" onclick="appendNum('9')">9</button>
+        <button type="button" class="blue" onclick="deleteItem()">DEL</button>
+        <button type="button" onclick="appendNum('4')">4</button>
+        <button type="button" onclick="appendNum('5')">5</button>
+        <button type="button" onclick="appendNum('6')">6</button>
+        <button type="button" class="operator" onclick="appendOp('+')">+</button>
+        <button type="button" onclick="appendNum('1')">1</button>
+        <button type="button" onclick="appendNum('2')">2</button>
+        <button type="button" onclick="appendNum('3')">3</button>
+        <button type="button" class="operator" onclick="appendOp('-')">-</button>
+        <button type="button" onclick="appendNum('.')">.</button>
+        <button type="button" onclick="appendNum('0')">0</button>
+        <button type="button" class="operator" onclick="appendOp('/')">/</button>
+        <button type="button" class="operator" onclick="appendOp('*')">*</button>
+        <button type="button" class="blue" onclick="resetScreen()">Reset</button>
+        <button class="operator, blue" type="submit" >=</button>
+        <button type="button" class="operator" onclick="appendOp('&#40')">&#40</button>
+        <button type="button" class="operator" onclick="appendOp('&#41')">&#41</button>
       </div>
     </div>
 

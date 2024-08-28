@@ -49,10 +49,10 @@ body {
   gap: 10px;
 }
 
-.btns button:nth-last-child(2),
+/* .btns button:nth-last-child(2),
 .btns button:last-child {
   grid-column: span 2;
-}
+} */
 
 button {
   background-color: white;
